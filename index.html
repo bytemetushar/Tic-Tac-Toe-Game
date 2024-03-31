@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe Game</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <a href="#O-record" id="msg-show">Show LeaderBoard</a>
+        <button id="new-btn">New Game</button>
+    </div>
+    
+    <main>
+        <h1>Ti-Tac-Toe</h1>
+        <div class="show-board hide">
+            <a href="#O-record" id="show">Show LeaderBoard</a>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
+    <div class="leaderboard">
+        <h3>---Leaderboard---</h3>
+        <table>
+                <tr>
+                    <th>Player</th>
+                    <th>O</th>
+                    <th>X</th>
+                </tr>
+                <tr>
+                    <td>Win</td>
+                    <td id="O-record">0</td>
+                    <td id="X-record">0</td>
+                </tr>
+        </table>
+        <button id="reset-leaderboard">Reset leaderboard</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
